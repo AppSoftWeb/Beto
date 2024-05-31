@@ -17,6 +17,10 @@ header {
   padding-top: 15px;
   position: fixed;
   width: 100%;
+  word-wrap: break-word;
+}
+#icon_menu {
+  display: none;
 }
 h1 {
   font-size: 1.5rem;
@@ -60,4 +64,27 @@ footer {
 }
 footer a {
   font-size: 15px;
+}
+
+@media (max-width: 667px) {
+  header {
+    display: grid;
+    grid-template-rows: auto auto;
+  }
+  #inicio {
+    display: none;
+  }
+  #icon_menu {
+    display: block;
+  }
+  nav {
+    display: block;
+  }
+  ul {
+    display: grid;
+  }
+  span h1 {
+    font-size: 0.9rem;
+    display: inline;
+  }
 }

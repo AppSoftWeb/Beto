@@ -23,3 +23,11 @@ document.getElementById("app_soft").addEventListener("click", function () {
     encodeURIComponent(mensage);
   window.open(whatsapp, "_blank");
 });
+//Menu Hambuger
+function clickMenu() {
+  if (listaMenu.style.display == "block") {
+    listaMenu.style.display = "none";
+  } else {
+    listaMenu.style.display = "block";
+  }
+}
